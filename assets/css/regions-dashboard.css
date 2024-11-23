@@ -256,14 +256,18 @@ main {
     }
 
     #graph-3 {
-        width: 40%;
+        width: 92%;
     }
 
     #graph-4 {
-        width: 50%;
+        width: 39%;
     }
 
     #graph-5 {
+        width: 52%;
+    }
+
+    #graph-6 {
         width: 92%;
     }
 }

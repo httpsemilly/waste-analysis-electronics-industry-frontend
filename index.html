@@ -8,26 +8,74 @@
     </head>
     <body>
         <header>
-            <h1>dashboard</h1>
+            <h1>dashboard / <span>geral</span></h1>
         </header>
         <nav>
+            <div id="logo">
+                <img src="./assets/icons/logo-icon.svg" alt="">
+                <p>e-waste <span>tracker</span></p>
+            </div>
             <div id="nav-icons">
-                <a href="#" target="_blank">
+                <h2>Dashboards</h2>
+                <a href="#">
                     <img src="./assets/icons/dashboard-icon.svg" alt="Dashboard principal">
+                    <p>Geral</p>
                 </a>
-                <a href="#" target="_blank">
+                <a href="companies-dashboard.html">
                     <img src="./assets/icons/companies-icon.svg" alt="Empresas">
+                    <p>Empresas</p>
                 </a>
-                <a href="#" target="_blank">
+                <a href="regions-dashboard.html">
                     <img src="./assets/icons/places-icon.svg" alt="Locais">
+                    <p>Regiões</p>
                 </a>
-                <a href="#" target="_blank">
+                <h2>Páginas</h2>
+                <a href="reports.html">
                     <img src="./assets/icons/reports-icon.svg" alt="Relatórios">
+                    <p>Relatório</p>
                 </a>
+            </div>
+            <div id="nav-footer">
                 <a href="#" target="_blank">
-                    <img src="./assets/icons/insights-icon.svg" alt="Insights">
+                    <img src="./assets/icons/github-icon.svg" alt="Github icon">
+                    <p>Github</p>
                 </a>
             </div>
         </nav>
+        <main>
+            <section class="info-table">
+                <div class="info-card">
+                    <p class="card-title">Total de Resíduos</p>
+                    <p class="data-value">127.980</p>
+                </div>
+                <div class="info-card-v2">
+                    <p class="card-title">Total de Empresas</p>
+                    <p class="data-value">125</p>
+                </div>
+                <div class="info-card">
+                    <p class="card-title">Total de Resíduos Perigosos</p>
+                    <p class="data-value">29.230</p>
+                </div>
+                <div class="info-card-v2">
+                    <p class="card-title">Principal Região Geradora</p>
+                    <p class="data-value">Sudeste</p>
+                </div>
+            </section>
+            <section id="graph-1" class="graph">
+                <p class="graph-title">Total de Resíduos</p>
+            </section>
+            <section id="graph-2" class="graph">
+                <p class="graph-title">Principais Tipos de Resíduos</p>
+            </section>
+            <section id="graph-3" class="graph">
+                <p class="graph-title">Resíduos por Região</p>
+            </section>
+            <section id="graph-4" class="graph">
+                <p class="graph-title">Periculosidade dos Resíduos</p>
+            </section>
+            <section id="graph-5" class="graph">
+                <p class="graph-title">Resíduos por Ano</p>
+            </section>
+        </main>
     </body>
 </html>

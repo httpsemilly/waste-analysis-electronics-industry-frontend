@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    font-size: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 25px 25px 25px;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #0000008f;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+header span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    bottom: 0%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: #ffffff;
+}
+
+nav #logo {
+    display: none;
+}
+
+#nav-icons h2, #nav-icons p {
+    display: none;
+}
+
+#nav-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+#nav-icons a img {
+    width: 42px;
+    height: 42px;
+}
+
+#nav-footer {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 100px;
+}
+
+.info-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 208px;
+}
+
+.info-card, .info-card-v2, .info-card-v3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 45%;
+    height: 50%;
+    background-color: #EDEEFC;
+    border-radius: 16px;
+}
+
+.info-card-v3 {
+    width: 92%;
+}
+
+.info-card-v2 {
+    background-color: #E6F1FD;
+}
+
+.card-title {
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.data-value {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+    letter-spacing: 1.75px;
+}
+
+.graph {
+    display: flex;
+    width: 92%;
+    height: 240px;
+    border-radius: 16px;
+    background-color: #F9F9FA;
+}
+
+.graph-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+@media only screen and (min-width: 800px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        gap: 40px;
+        width: 200px;
+        height: 100%;
+        border-right: 1px solid #dfdfdf;
+        border-radius: 0px;
+    }
+
+    nav #logo {
+        display: flex;
+        gap: 10px;
+        margin-top: 50px;
+        margin-left: 35px;
+        align-items: center;
+    }
+
+    nav #logo p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav #logo p, span {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    nav #logo p {
+        color: #2E775D;
+    }
+
+    nav #logo span {
+        color: #82BFAA;
+    }
+
+    #nav-icons h2, #nav-icons p, #nav-footer p {
+        display: block;
+        font-size: 16px;
+    }
+
+    #nav-icons h2 {
+        color: #0000008f;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+
+    #nav-icons, #nav-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 30px;
+    }
+
+    #nav-icons a, #nav-footer a {
+        display: flex;
+        gap: 10px;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    #nav-icons a img, #nav-footer a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #nav-footer {
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 20px;
+    }
+
+    header {
+        border-bottom: 1px solid #dddddd;
+        margin-right: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        margin-top: 0;
+        padding-top: 25px;
+        background-color: #ffffff;
+    }
+
+    h1 {
+        margin: 0 80px 20px 230px;
+    }
+
+    main {
+        margin: 50px 0 40px 200px;
+
+    }
+
+    .info-table {
+        flex-wrap: nowrap;
+        margin: 50px 0 0 0;
+        height: 110px;
+    }
+
+    .info-card, .info-card-v2, .info-card-v3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        width: 29.8%;
+        height: 100%;
+        border-radius: 16px;
+    }
+
+    .graph {
+        display: flex;
+        height: 240px;
+        border-radius: 16px;
+        background-color: #F9F9FA;
+    }
+
+    #graph-1 {
+        width: 29.8%;
+    }
+
+    #graph-2 {
+        width: 60.2%;
+    }
+
+    #graph-3 {
+        width: 40%;
+    }
+
+    #graph-4 {
+        width: 50%;
+    }
+
+    #graph-5 {
+        width: 92%;
+    }
+}
